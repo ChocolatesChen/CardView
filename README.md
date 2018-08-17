@@ -27,4 +27,4 @@
 	view.addSubview(cardView)
 ```
 
-![show](/Users/chenguang/Downloads/CardView/CardView/show.png)
+![image](https://github.com/ChocolatesChen/CardView/blob/master/show.png)
