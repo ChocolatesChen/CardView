@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import SnapKit
+
+//frame
+let kScreenHeight = UIScreen.main.bounds.size.height
+let kScreenWidth = UIScreen.main.bounds.size.width
+let kScreenBounds = UIScreen.main.bounds
 
 class ViewController: UIViewController {
 
@@ -28,7 +34,7 @@ class ViewController: UIViewController {
         view.addSubview(cardView)
         
         cardView.snp.makeConstraints { (make) in
-            make.top.equalTo(label2.snp.bottom).offset(10)
+            make.top.equalToSuperview().offset(10)
             make.left.right.equalToSuperview()
             make.height.equalTo(kScreenWidth*0.34)
         }
